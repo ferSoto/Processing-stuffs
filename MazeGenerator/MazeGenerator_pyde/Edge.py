@@ -13,11 +13,14 @@ class Edge:
     def __cmp__(self, other):
         return cmp(self.weight, other.weight)
         
+    @property
     def a(self):
         return self._a
     
+    @property
     def b(self):
         return self._b
 
+    @property
     def weight(self):
         return self._weight
